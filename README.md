@@ -39,7 +39,8 @@ Define the perspective transform function from the lesson and test it on an imag
 
  Define a function to perform a perspective transform
  I've used the example grid image above to choose source points for the
- 
+ grid cell in front of the rover (each grid cell is 1 square meter in the sim)
+ Define a function to perform a perspective transform
 def perspect_transform(img, src, dst):
            
     M = cv2.getPerspectiveTransform(src, dst)
