@@ -28,3 +28,7 @@ example_rock = '../calibration_images/example_rock1.jpg'
 grid_img = mpimg.imread(example_grid)
 rock_img = mpimg.imread(example_rock)
 fig = plt.figure(figsize=(12,3))
+plt.subplot(121)
+plt.imshow(grid_img)
+plt.subplot(122)
+plt.imshow(rock_img)
