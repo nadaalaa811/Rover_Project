@@ -69,3 +69,6 @@ destination = np.float32([[image.shape[1]/2 - dst_size, image.shape[0] - bottom_
 warped = perspect_transform(grid_img, source, destination)
 plt.imshow(warped)
 #scipy.misc.imsave('../output/warped_example.jpg', warped)
+
+
+# Color Thresholding
