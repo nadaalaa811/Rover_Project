@@ -37,4 +37,14 @@ plt.imshow(rock_img)
 # Perspective Transform
 Define the perspective transform function from the lesson and test it on an image.
 
+ Define a function to perform a perspective transform
+ I've used the example grid image above to choose source points for the
+ 
+def perspect_transform(img, src, dst):
+           
+    M = cv2.getPerspectiveTransform(src, dst)
+    warped = cv2.warpPerspective(img, M, (img.shape[1], img.shape[0]))# keep same size as input image
+    
+    return warped
+
 
