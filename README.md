@@ -47,5 +47,16 @@ def perspect_transform(img, src, dst):
     warped = cv2.warpPerspective(img, M, (img.shape[1], img.shape[0]))# keep same size as input image
     
     return warped
+    
+    
+Define calibration box in source (actual) and destination (desired) coordinates
+These source and destination points are defined to warp the image
+to a grid where each 10x10 pixel square represents 1 square meter
+The destination box will be 2*dst_size on each side
+dst_size = 5 
+Set a bottom offset to account for the fact that the bottom of the image 
+is not the position of the rover but a bit in front of it
+this is just a rough guess, feel free to change it!
+bottom_offset = 6
 
 
