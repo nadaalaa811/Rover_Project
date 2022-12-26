@@ -66,3 +66,5 @@ destination = np.float32([[image.shape[1]/2 - dst_size, image.shape[0] - bottom_
                   [image.shape[1]/2 - dst_size, image.shape[0] - 2*dst_size - bottom_offset],
                   ])
 
+warped = perspect_transform(grid_img, source, destination)
+plt.imshow(warped)
