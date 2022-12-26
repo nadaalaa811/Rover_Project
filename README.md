@@ -9,17 +9,22 @@ Next, read in and display a random image from the test_dataset folder
 
 path = '../test_dataset/IMG/*'
 img_list = glob.glob(path)
+
 //Grab a random image and display it
+
 idx = np.random.randint(0, len(img_list)-1)
 image = mpimg.imread(img_list[idx])
 plt.imshow(image)
 
 # Calibration Data
 Read in and display example grid and rock sample calibration images. You'll use the grid for perspective transform and the rock image for creating a new color selection that identifies these samples of interest.
+
 //In the simulator you can toggle on a grid on the ground for calibration
 //You can also toggle on the rock samples with the 0 (zero) key.  
 //Here's an example of the grid and one of the rocks
+
 example_grid = '../calibration_images/example_grid1.jpg'
 example_rock = '../calibration_images/example_rock1.jpg'
 grid_img = mpimg.imread(example_grid)
 rock_img = mpimg.imread(example_rock)
+fig = plt.figure(figsize=(12,3))
