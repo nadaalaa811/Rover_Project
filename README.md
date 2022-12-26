@@ -12,9 +12,9 @@ img_list = glob.glob(path)
 
 //Grab a random image and display it
 
-idx = np.random.randint(0, len(img_list)-1)
-image = mpimg.imread(img_list[idx])
-plt.imshow(image)
+  idx = np.random.randint(0, len(img_list)-1)
+  image = mpimg.imread(img_list[idx])
+  plt.imshow(image)
 
 # Calibration Data
 Read in and display example grid and rock sample calibration images. You'll use the grid for perspective transform and the rock image for creating a new color selection that identifies these samples of interest.
