@@ -72,3 +72,6 @@ plt.imshow(warped)
 
 
 # Color Thresholding
+Color Thresholding was used to distinguish between the navigable terrain, obstacles and rock samples.
+A color thresholding function was used with a threshold of RGB > 160 which does a good job of identifying ground pixels.
+Rocks and pixels where identified using hsv color space
